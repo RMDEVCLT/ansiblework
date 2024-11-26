@@ -1,5 +1,5 @@
-- name: connectivity check
-  hosts: all
+- hosts: web_servers
   tasks:
-   - name: ping check
-     ping:
+    - name: Ping web servers
+      ping:
+      register: ping_result
